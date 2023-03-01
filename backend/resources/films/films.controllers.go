@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
+	db "github.com/Coniix/go-react-app/database"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
-	db "tsi.com/DB_Models/database"
 )
 
 func ListFilms(w http.ResponseWriter, r *http.Request) {

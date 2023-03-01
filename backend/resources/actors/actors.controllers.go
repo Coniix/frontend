@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
+	db "github.com/Coniix/go-react-app/database"
+	e "github.com/Coniix/go-react-app/error"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
-	db "tsi.com/DB_Models/database"
-	e "tsi.com/DB_Models/error"
 )
 
 func ListActors(w http.ResponseWriter, r *http.Request) {

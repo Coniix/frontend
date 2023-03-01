@@ -2,8 +2,8 @@ package server
 
 import (
 	"github.com/go-chi/chi/v5"
-	"tsi.com/DB_Models/resources/actors"
-	"tsi.com/DB_Models/resources/films"
+	"github.com/Coniix/go-react-app/resources/actors"
+	"github.com/Coniix/go-react-app/resources/films"
 )
 
 func Router() chi.Router {

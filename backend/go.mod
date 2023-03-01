@@ -1,4 +1,4 @@
-module tsi.com/DB_Models
+module github.com/Coniix/go-react-app
 
 go 1.19
 
