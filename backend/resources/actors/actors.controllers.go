@@ -10,6 +10,10 @@ import (
 	e "tsi.com/DB_Models/error"
 )
 
+func OptionsFunc(w http.ResponseWriter, r *http.Request) {
+	//Placeholder for preflight request
+}
+
 func ListActors(w http.ResponseWriter, r *http.Request) {
 	var actors []*Actor
 	db.DB.Find(&actors)

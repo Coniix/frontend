@@ -30,7 +30,9 @@ func addCorsHeader(handler http.Handler) http.Handler {
 		// Allow all origins
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		// Allow specific headers
-		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+		w.Header().Set("Access-Control-Allow-Headers", "*")
+		// Allow specific methods
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE")
 		// Pass the request to the next handler
 		handler.ServeHTTP(w, r)
 	})

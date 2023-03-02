@@ -5,6 +5,9 @@ import "github.com/go-chi/chi/v5"
 func Routes() chi.Router {
 	router := chi.NewRouter()
 
+	//Placeholder for preflight request
+	router.Options("/", OptionsFunc)
+
 	router.Get("/", ListActors)
 	router.Post("/", CreateActor)
 	router.Get("/{id}", ListSingleActor)
