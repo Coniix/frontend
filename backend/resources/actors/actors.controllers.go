@@ -26,7 +26,17 @@ func ListActors(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeleteActor(w http.ResponseWriter, r *http.Request) {
+
 	queryID := chi.URLParam(r, "id")
+	var actor []*Actor
+	db.DB.Find(&actor, "actor_id = ?", queryID)
+
+	if list, err := NewActorListResponse(actor); err != nil {
+		render.Render(w, r, e.ErrInvalidRequest(err))
+	} else {
+		render.RenderList(w, r, list)
+	}
+
 	var example_actor *Actor
 	db.DB.Delete(&example_actor, "actor_id = ?", queryID)
 }

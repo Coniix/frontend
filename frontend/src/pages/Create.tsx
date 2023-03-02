@@ -4,7 +4,10 @@ import MyForm from '../components/MyForm'
 
 const Create = () => {
     return (
-        <MyForm />
+        <div>  
+            <h1>Create</h1>
+            <MyForm />
+        </div> 
     );
   };
   
