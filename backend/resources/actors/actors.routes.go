@@ -7,6 +7,7 @@ func Routes() chi.Router {
 
 	//Placeholder for preflight request
 	router.Options("/", OptionsFunc)
+	router.Options("/{id}", OptionsFunc)
 
 	router.Get("/", ListActors)
 	router.Post("/", CreateActor)
