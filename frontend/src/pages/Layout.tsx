@@ -11,6 +11,7 @@ const Layout = () => {
             <Button><Link to="/Read">Read</Link></Button>
             <Button><Link to="/Update">Update</Link></Button>
             <Button><Link to="/Delete">Delete</Link></Button>
+            <Button><Link to="/Play">Play</Link></Button>
         </Stack>
       </nav>
 

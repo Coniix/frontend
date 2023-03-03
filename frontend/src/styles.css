@@ -1,0 +1,9 @@
+.typing-test {
+    font-size: 3rem;
+    outline: none;
+  }
+  
+  .curr-letter {
+    text-decoration: underline;
+  }
+  

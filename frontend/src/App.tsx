@@ -6,6 +6,8 @@ import Layout from "./pages/Layout";
 import Read from "./pages/Read";
 import Update from "./pages/Update";
 import Delete from "./pages/Delete";
+import Play from "./pages/Play";
+
 
 export default function App() {
 
@@ -17,6 +19,7 @@ export default function App() {
           <Route path="Read" element={<Read />} />
           <Route path="Update" element={<Update />} />
           <Route path="Delete" element={<Delete />} />
+          <Route path="Play" element={<Play />} />
         </Route>
       </Routes>
     </BrowserRouter>
