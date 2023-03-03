@@ -6,4 +6,60 @@
   .curr-letter {
     text-decoration: underline;
   }
-  
+  label {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #0972e1;
+    padding: 0.35rem 0.75rem;
+    margin-right: 20px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding: 12px;
+  text-align: center;
+  background-color: #0972e1;
+  border: solid black 1px;
+  color: white;
+}
+
+#button {
+  background-color: #0972e1; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#root{
+  width: 50%;
+}
+
+nav{
+  display: inline-block;
+    list-style-type: none;
+}

@@ -31,7 +31,7 @@ const Delete = () => {
           />
         </label>
         <br></br><br></br>
-        <input type="submit" />
+        <input id="button" type="submit" />
       </form>
       {!data ? "" : 
           <h1>User Deleted</h1> 

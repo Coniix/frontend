@@ -1,7 +1,6 @@
 import useSWR from "swr";
 import useTypingGame from "react-typing-game-hook";
 import "../styles.css";
-import Timer from "../components/Timer";
 import { useState } from 'react';
 
 export const ENDPOINT = "http://localhost:8080";
@@ -85,7 +84,7 @@ const Play = () => {
 
             {!data ? "Loading..." : 
             <div> 
-                <button onClick={handleClick.bind(data)}>Start</button>
+                <button id="button" onClick={handleClick.bind(data)}>Start</button>
             </div>
             }
             <div
@@ -111,10 +110,6 @@ const Play = () => {
           );
         })}
       </div>
-      {/* {!countdown ? "" :  
-          <Timer  max={countdown} />
-      } */}
-      
     </div> 
     );
 }

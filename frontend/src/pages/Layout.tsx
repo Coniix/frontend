@@ -14,7 +14,6 @@ const Layout = () => {
             <Button><Link to="/Play">Play</Link></Button>
         </Stack>
       </nav>
-
       <Outlet />
     </>
   )

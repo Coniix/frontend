@@ -74,23 +74,23 @@ export default function UpdateTable({data} : TableCompProps) {
         <br></br><br></br>
         {!firstName ? "" :
         <form onSubmit={handleSubmit}>
-          <label>Enter new first name:
+          <label>Enter new first name:          </label>
             <input
               type="text" 
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
-          </label>
+
           <br></br><br></br>
-          <label>Enter new last name:
+          <label>Enter new last name:          </label>
             <input
               type="text" 
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
             />
-          </label>
+
           <br></br><br></br>
-          <input type="submit" />
+          <input id="button" type="submit" />
         </form>}
       </div>
     );

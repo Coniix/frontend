@@ -20,23 +20,23 @@ export default function MyForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>Enter actor first name:
+      <label>Enter actor first name:      </label>
         <input
           type="text" 
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
         />
-      </label>
+
       <br></br><br></br>
-      <label>Enter actor last name:
+      <label>Enter actor last name:</label>
         <input
           type="text" 
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
         />
-      </label>
+      
       <br></br><br></br>
-      <input type="submit" />
+      <input  id="button" type="submit" />
     </form>
   )
 }

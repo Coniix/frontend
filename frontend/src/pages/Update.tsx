@@ -5,9 +5,12 @@ import UpdateTable, { Actor } from "../components/UpdateTable";
 const Update = () => {
   const [name, setName] = useState("");
   let [data, setData] = useState<Actor[]>();
+  let [buttonText, setButtonText] = useState("Search");
+
 
   const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
+    setButtonText("Refresh");
     // alert(`The name you entered was: ${firstName} ${lastName}`)
     const actorName = name
     axios.get(`http://localhost:8080/actors/search/${actorName}`).then((response) => {
@@ -23,16 +26,17 @@ const Update = () => {
     <div>
       <h1>Update</h1>
       <form onSubmit={handleSubmit}>
-        <label>Enter actor first or last name:
+        <label>Enter actor first or last name:        </label>
           <input
             type="text" 
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-        </label>
+
         <br></br><br></br>
-        <input type="submit" />
+        <input id="button" type="submit" value={buttonText} />
       </form>
+      <br></br>
       {!data ? "" :  
           <UpdateTable 
           data = {data}

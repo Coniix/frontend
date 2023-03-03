@@ -16,6 +16,7 @@ export default function TableComp({data} : TableCompProps) {
 
     return (
         <div className="App">
+        <div id="table">
         <table>
           <thead>
           <tr>
@@ -38,6 +39,7 @@ export default function TableComp({data} : TableCompProps) {
           })}
           </tbody>
         </table>
+        </div>
       </div>
     );
 }
